@@ -1,0 +1,10 @@
+// Acess specifiers
+
+// arraylist is dynamic requitement dekh k size adjust ho jaata
+
+
+
+// private same class
+//defalut same package
+// public
+// protected same package but for another package we have to inherit that
