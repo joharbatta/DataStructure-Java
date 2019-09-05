@@ -1,0 +1,29 @@
+// interface gives 100 percent abstartacty
+methods will by defalut get abstract
+
+it support multiple inetrface
+
+one interace can extend another inetrface
+
+class can inherit also implements too
+
+class dog extends parent implement animal,talk
+
+intefaces dont have constructors but absstrat class has
+
+interface X extends Y
+{
+
+
+
+}
+interface Animal
+{
+
+        void show();
+}
+interface takable
+{
+void tak();
+}
+class Dog implements Animal,Talkable

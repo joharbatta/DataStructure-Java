@@ -1,0 +1,49 @@
+//////////////// Arraylist
+
+ArrayList<> list=new ArrayList<>(); // here we can add any type of objects
+list.add(index,object)
+list.get(0);
+
+toString() to return objets in string
+
+///////////// Generics
+
+ArrayList<Student> list=new ArrayList<>(); // here we can add only obj specified
+
+
+///////////////////////////// for each for printing arraylist
+
+for(Student stu:list)
+{
+Sout(stu);
+}
+
+ ////////////// iterator
+
+ ListIterator<Student> itr=list.listIterator();
+
+ while(itr.hasNext())
+ {
+    System.out.println(itr.next());
+ }
+
+ /////////////  reverse print list
+
+ ListIterator<Student> itr=list.listIterator(list.size()); // list.size is all you wanna add
+
+  while(itr.hasPrevious())
+  {
+     System.out.println(itr.previous());
+  }
+
+
+ //// agr primitive values store krvani list me unke liye classes ha taki object me store kre
+
+ ArrayList<Integer> list=new ArrayList<>();
+
+ //Integer i=new Integer(10);
+
+ list.add(1);
+ list.add(2);
+
+
