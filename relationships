@@ -1,0 +1,27 @@
+is-a relation
+
+class Animal
+{
+
+}
+
+class Dog extends Anial
+{
+
+}
+
+///////////////////////////////////////////////////////////////
+
+has-a relation or we can call composition
+
+
+class Address
+[
+
+}
+class Student
+{
+   ind id;
+   Address add;
+
+}
