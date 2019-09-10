@@ -19,11 +19,19 @@ int z;
             if(arr[i]==arr[i+1])
             {
                 i++;
-                System.out.print(n-i-1);
+                z=n-i-1;
+                if(z>0) {
+                    System.out.print(z);
+                }
             }
             else
             {
-                System.out.print(n-i-1);
+                z=n-i-1;
+                if(z>0) {
+                    System.out.print(z);
+                }
+
+
             }
 
         }
