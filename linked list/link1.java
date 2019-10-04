@@ -21,12 +21,14 @@ class LinkedList
     }
     public void insertBeg(int data)
     {
-        if (head == null) {
-            Node node = new Node();
+        if (head == null)
+        {
+         Node node = new Node();
             node.data = data;
             node.next = null;
             head = node;
-        } else {
+        } else
+            {
             Node node = new Node();
             node.data = data;
             node.next = head;
@@ -37,7 +39,7 @@ class LinkedList
 
     public void insertLast(int data)
     {
-         v Node node=new Node();
+        Node node=new Node();
         node.data=data;
         Node temp=head;
         if(temp==null)
@@ -91,7 +93,8 @@ class LinkedList
     public void transverse() {
         if (head == null) {
             System.out.println("List is empty");
-        } else {
+        } else
+            {
             Node temp = head;
             while (temp.next != null) {
                 System.out.println(temp.data);
@@ -99,7 +102,6 @@ class LinkedList
             }
             System.out.println(temp.data);
         }
-
     }
     public void deleteBeg()
     {
@@ -134,7 +136,7 @@ class LinkedList
              }
     }
 
-    }
+}
 
 class link1 {
     public static void main(String args[]) {
@@ -147,7 +149,6 @@ class link1 {
         //list.deleteBeg();
         list.insertLast(60);
         list.insertpos(100,3);
-
         list.transverse();
         //list.deletelast();
         //list.transverse();
@@ -160,3 +161,6 @@ class link1 {
     }
 
 }
+
+
+

@@ -38,6 +38,9 @@ class DoublyLinkedList
         size++;
 
     }
+    public int deleteFirst()
+    {
+    }
 
     public void displayForward()
     {
