@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Node
 {
     int data;
@@ -51,25 +52,45 @@ class LinkedList
         {
             Node temp = head;
             while (temp.next != null) {
-                System.out.println(temp.data);
+                System.out.print(temp.data+" ");
                 temp = temp.next;
             }
             System.out.println(temp.data);
         }
     }
-    public void reverse()
+    public Node reverse()
     {
-        Node pointer = head;
-        Node previous = null, current = null;
+        // Node pointer = head;
+        // Node previous = null, current = null;
 
-        while (pointer != null) {
-            current = pointer;
-            pointer = pointer.next;
+        // while (pointer != null) {
+        //     current = pointer;
+        //     pointer = pointer.next;
 
-            // reverse the link
-            current.next=previous;
-            previous=current;
-            head=current;
+        //     // reverse the link
+        //     current.next=previous;
+        //     previous=current;
+        //     head=current;
+        // }
+        if(head==null)
+        {
+            return head;
+
+        }
+       
+        Node current=head;
+        Node prev=null;
+        Node next=null;
+
+        while(current!=null)
+        {
+            next=current.next;
+            current.next=prev;
+            prev=current;
+            current=next;
+        }
+
+          return prev;
 
 
         }
@@ -95,7 +116,7 @@ class LinkedList
 
     }
 
-}
+
 
 class reverseLinked {
     public static void main(String args[]) {
@@ -107,10 +128,8 @@ class reverseLinked {
         list.insertLast(50);
         list.transverse();
         list.reverse();
-
-
-        //list.deletelast();
-        list.transverse();
+    
+         list.transverse();
 
 
 

@@ -68,7 +68,7 @@ class LinkedList
         }
         else if(pos==size+1)
         {
-            insertLast(data);
+            insertLast(data); 
         }
         else if(pos>1 && pos<=size)
         {
@@ -97,7 +97,7 @@ class LinkedList
             {
             Node temp = head;
             while (temp.next != null) {
-                System.out.println(temp.data);
+                System.out.print(temp.data+" ");
                 temp = temp.next;
             }
             System.out.println(temp.data);
@@ -126,11 +126,13 @@ class LinkedList
             {
             Node temp = head;
             Node tail=null;
-            if (temp.next!=tail)
+            Node prev=null;
+            while(temp.next!=tail)
             {
+                prev=temp;
                 temp = temp.next;
             }
-            tail=temp;
+            tail=prev;
             tail.next=null;
             size--;
              }
@@ -145,10 +147,11 @@ class link1 {
         list.insertBeg(20);
         list.insertBeg(30);
         list.insertBeg(40);
-        list.deleteBeg();
+        //list.deleteBeg();
         //list.deleteBeg();
         list.insertLast(60);
         list.insertpos(100,3);
+        list.deletelast();
         list.transverse();
         //list.deletelast();
         //list.transverse();
