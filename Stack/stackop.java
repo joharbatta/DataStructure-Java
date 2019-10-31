@@ -1,11 +1,11 @@
 import java.util.*;
 class Stack
-{   int arr[],top,capacity;
+{     int arr[],top,capacity;
     Stack(int size)
     {
-    int arr[]=new int[size];
-    int top=-1;
-    int capacity=size;
+    arr=new int[size];
+    top=-1;
+    capacity=size;
     }
     void push(int data)
     {
