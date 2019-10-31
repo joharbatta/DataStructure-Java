@@ -104,7 +104,7 @@ class LinkedList
         }
     }
     public void deleteBeg()
-    {
+        {
         if(head==null)
         {
             System.out.println("List is empty");

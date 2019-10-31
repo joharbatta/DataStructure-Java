@@ -11,7 +11,7 @@ class Stack
     {
         top++;
         arr[top]=data;
-        System.out.println(arr[top]+"Item pushed");
+        System.out.println(arr[top]+" Item pushed");
     }
 
 
