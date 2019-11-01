@@ -9,9 +9,16 @@ class Stack
     }
     void push(int data)
     {
+        if(top>=capacity-1)
+        {
+            System.out.println("Stack is full");
+        }
+        else
+        {
         top++;
         arr[top]=data;
         System.out.println(arr[top]+" Item pushed");
+        }
     }
 
 
@@ -28,6 +35,7 @@ class stackop
         s.push(6);
         s.push(7);
         s.push(8);
+        s.push(9);
       }
 
 

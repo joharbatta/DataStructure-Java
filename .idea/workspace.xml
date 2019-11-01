@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf6da85f-b629-4e19-bcd8-ff01d4cb0b99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Stack/stackop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linked list/reverseLinked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Doubly Linked List/dlink.java" beforeDir="false" afterPath="$PROJECT_DIR$/Doubly Linked List/dlink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test Questions/cutropes.class" beforeDir="false" afterPath="$PROJECT_DIR$/Test Questions/cutropes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked list/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/linked list/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked list/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/linked list/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked list/link1.java" beforeDir="false" afterPath="$PROJECT_DIR$/linked list/link1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/stackop.class" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/stackop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack/stackop.java" beforeDir="false" afterPath="$PROJECT_DIR$/Stack/stackop.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
