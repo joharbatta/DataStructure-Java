@@ -34,10 +34,7 @@ class kthendval
         }
         int k=sc.nextInt();
         kthfromend(k,n);
-
-        //show();
-        
-
+        //show();     
     }
 
     static void kthfromend(int k,int n)

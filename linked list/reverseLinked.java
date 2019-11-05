@@ -71,12 +71,7 @@ class LinkedList
         //     current.next=previous;
         //     previous=current;
         //     head=current;
-        // }
-        if(head==null)
-        {
-            return head;
-
-        }
+        // }  
        
         Node current=head;
         Node prev=null;
@@ -91,8 +86,6 @@ class LinkedList
         }
 
           return prev;
-
-
         }
         //public Node head;
 //        if(head==null)
@@ -131,11 +124,6 @@ class reverseLinked {
     
          list.transverse();
 
-
-
-
-
-
     }
-
+    
 }

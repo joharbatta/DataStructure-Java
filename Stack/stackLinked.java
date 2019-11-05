@@ -64,9 +64,8 @@ public class stackLinked
         s.push(3);
         s.push(4);
         int x=s.pop();
-        System.out.println(x+ " popped");
-
-
+        System.out.println(x+ " popped");  
 
     }
-}
+    
+    }

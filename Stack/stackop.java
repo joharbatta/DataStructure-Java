@@ -8,7 +8,7 @@ class Stack
     capacity=size;
     }
     void push(int data)
-    {
+    { 
         if(top>=capacity-1)
         {
             System.out.println("Stack is full");
