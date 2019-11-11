@@ -1,4 +1,4 @@
-//find height of binary serach tree using 2 methods nodes or edges
+//find height of binary serach tree using 2 methods nodes r edges
 
 mport java.util.*;
 public class bstheight
@@ -64,7 +64,30 @@ public class bstheight
         }
         
     }
-  
+  int height(Node root)
+	{
+		
+		int c=0,c1=0;
+		if(root==null)
+		{
+		return 0;
+		}
+		if(root!=null)
+		{
+			c=height(root.left);
+			c++;
+			c1=height(root.right);
+			c1++;
+		}
+		if(c>c1)
+			  return c;
+		  else
+		return c1;
+		 
+	} 
+ 
+
+
 
 
      public static void main(String []agrs)
