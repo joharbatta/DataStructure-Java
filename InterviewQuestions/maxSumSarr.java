@@ -28,7 +28,30 @@ public class maxSumSarr
                 }
             }
         }
-        System.out.print(max);
+        System.out.println(max);
+
+
+        // kadane algo o(n)
+
+        int maxSum=Integer.MIN_VALUE;
+        int currSum=0;
+
+        for(int i=0;i<n;i++)
+        {
+            currSum+=arr[i];
+
+            if(currSum>maxSum)
+            {
+                maxSum=currSum;
+            }
+            if(currSum<0)
+            {
+                currSum=0;
+
+            }
+        }
+        System.out.print(maxSum);
+        
 
 
 
