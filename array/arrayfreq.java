@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 public class arrayfreq {
     public static void main(String args[])
     {
@@ -40,7 +41,6 @@ public class arrayfreq {
                    System.out.println(arr[i]+" comes "+dup[i]+" times");
                }
            }
-           
            // method 2
 
            int max = arr[0]; 
@@ -67,9 +67,26 @@ public class arrayfreq {
              }
          }
 
+         //method 3 hashmap
+         System.out.println("3rd method");
 
+         java.util.HashMap<Integer,Integer> h=new java.util.HashMap<>();
 
+         for(int i=0;i<n;i++)
+         {
+             if(h.containsKey(arr[i]))
+             {
+                 h.put(arr[i],h.get(arr[i])+1);
+             }
+             else
+             {
+                 h.put(arr[i],1);
+             }
 
+         }
+         for (int i : h.keySet()) {
+            System.out.println("key: " + i + " value: " + h.get(i));
+          }
 
 
     }
