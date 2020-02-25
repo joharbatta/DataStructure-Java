@@ -1,5 +1,5 @@
 import java.io.IOException; 
-  
+import java.math.BigInteger; 
 class allSubsets
 { 
     static void printSubsets(char set[]) 
@@ -12,8 +12,10 @@ class allSubsets
             for (int j = 0; j < n; j++) 
             {
   
-                if ((i & (1 << j)) > 0)  
-                    System.out.print(set[j] + " "); 
+                // if ((i & (1 << j)) > 0)  
+                //     System.out.print(set[j] + " ");
+                if (BigInteger.valueOf(i).testBit(j)) 
+                    System.out.print(set[j]+" ");  
             }
   
             System.out.println("}"); 
@@ -21,7 +23,7 @@ class allSubsets
     } 
     public static void main(String[] args) 
     { 
-        char set[] = {'a', 'b', 'c'}; 
+        char set[] = {'a', 'b', 'c','d'}; 
         printSubsets(set); 
     } 
 } 
