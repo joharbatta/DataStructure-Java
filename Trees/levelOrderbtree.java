@@ -1,4 +1,5 @@
-
+import java.util.Queue;
+import java.util.*;
 class Node {
     int data;
     Node left;
@@ -50,6 +51,30 @@ class BinaryTree {
             System.out.println();
         }
     }
+    //iterative method single line
+    void levitr(Node root) 
+    {
+        if (root == null)
+        {
+            return;
+        }
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+        while (!q.isEmpty()) 
+        {
+            Node temp = q.remove();
+            System.out.print(temp.data + " ");
+            if (temp.left != null) 
+            {
+                q.add(temp.left);
+            }
+            if (temp.right != null) 
+            {
+                q.add(temp.right);
+            }
+        }
+        System.out.println();
+    }
 }
 
 class levelOrderbtree {
@@ -61,5 +86,7 @@ class levelOrderbtree {
         bt.root.left.right = new Node(9);
         bt.root.right.left = new Node(7);
         bt.levrec(bt.root);
+        //iterative
+        bt.levitr(bt.root);
     }
 }
