@@ -1,5 +1,6 @@
 import java.util.Queue;
 import java.util.*;
+
 class Node {
     int data;
     Node left;
@@ -22,15 +23,13 @@ class BinaryTree {
         this.root = new Node(data);
     }
 
-    int height(Node root) 
-    {
+    int height(Node root) {
         if (root == null)
             return -1;
         return 1 + Math.max(height(root.left), height(root.right));
     }
 
-    void printAtLevel(Node root, int level) 
-    {
+    void printAtLevel(Node root, int level) {
         if (root == null)
             return;
         if (level == 1) {
@@ -41,8 +40,7 @@ class BinaryTree {
         printAtLevel(root.right, level - 1);
     }
 
-    void levrec(Node root) 
-    {
+    void levrec(Node root) {
         if (root == null)
             return;
         int h = height(root);
@@ -51,29 +49,52 @@ class BinaryTree {
             System.out.println();
         }
     }
-    //iterative method single line
-    void levitr(Node root) 
-    {
-        if (root == null)
-        {
+
+    // iterative method single line
+    void levitr(Node root) {
+        if (root == null) {
             return;
         }
         Queue<Node> q = new LinkedList<>();
         q.add(root);
-        while (!q.isEmpty()) 
-        {
+        while (!q.isEmpty()) {
             Node temp = q.remove();
             System.out.print(temp.data + " ");
-            if (temp.left != null) 
-            {
+            if (temp.left != null) {
                 q.add(temp.left);
             }
-            if (temp.right != null) 
-            {
+            if (temp.right != null) {
                 q.add(temp.right);
             }
         }
         System.out.println();
+    }
+  // iterative level wise
+    void levlineitr(Node root) 
+    {
+        if (root == null)
+            return;
+        Queue<Node> q = new java.util.LinkedList<>();
+        q.add(root);
+        while (true) {
+            int size = q.size();
+            if (size == 0)
+                break;
+            // while(size>0)
+            for (int i = 0; i < size; i++) 
+            {
+                Node temp = q.remove();
+                System.out.print(temp.data + " ");
+                if (temp.left != null) {
+                    q.add(temp.left);
+                }
+                if (temp.right != null) {
+                    q.add(temp.right);
+                }
+                // size--;
+            }
+            System.out.println();
+        }
     }
 }
 
@@ -86,7 +107,9 @@ class levelOrderbtree {
         bt.root.left.right = new Node(9);
         bt.root.right.left = new Node(7);
         bt.levrec(bt.root);
-        //iterative
+        // iterative
         bt.levitr(bt.root);
+        bt.levlineitr(bt.root);
     }
+
 }
