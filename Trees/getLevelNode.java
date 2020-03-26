@@ -44,7 +44,38 @@ class BinaryTree{
         return l;
       }
 
-   
+      void getLevelOfNode1(Node root,int val) 
+    {
+        if (root == null)
+            return;
+        Queue<Node> q = new java.util.LinkedList<>();
+        q.add(root);
+        int level=1;
+        while (true) 
+        {
+            int size = q.size();
+            if (size == 0)
+                break;
+            for (int i = 0; i < size; i++) 
+            {
+                Node temp = q.remove();
+                //System.out.print(temp.data + " ");
+                if(val==temp.data)
+                {
+                    System.out.println(level);
+                    System.exit(0);
+                }
+                if (temp.left != null) {
+                    q.add(temp.left);
+                }
+                if (temp.right != null) {
+                    q.add(temp.right);
+                }
+                
+            }
+            level++;
+        }
+    }
 }
 
 class getLevelNode{
@@ -57,6 +88,7 @@ class getLevelNode{
         bt.root.right.left=new Node(7);
         bt.root.right.left.right=new Node(12);
         System.out.println(bt.getLevelOfNode(bt.root, 7, 1));
-      
+        //iterative
+        bt.getLevelOfNode1(bt.root, 12);
     }
 }
