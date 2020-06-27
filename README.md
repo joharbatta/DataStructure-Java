@@ -1,12 +1,12 @@
 # DS-Java
-Data Structures Using Java
+# Data Structures Using Java
 
 ## | LinkedList 
 ## | Array 
 ## | String
 ## | Stack 
 ## | Queue 
-## ## | HashMap 
+## | HashMap 
 ## | Set 
 ## | Tree 
 ## | Graph 
